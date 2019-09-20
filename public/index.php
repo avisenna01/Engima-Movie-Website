@@ -12,7 +12,10 @@
 	        break;
 	    case '/load' :
 	        require __DIR__ . '/../controller/load.php';
-	        break;
+			break;
+		case '/login' :
+			require __DIR__ . '/../views/login.html';
+			break;
 	    default:
 	        require __DIR__ . '/../views/fail.html';
 	        break;
