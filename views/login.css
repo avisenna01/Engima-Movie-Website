@@ -38,6 +38,7 @@ button:hover {
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
+  font-size: 18px;
 }
 
 img.avatar {
@@ -47,6 +48,8 @@ img.avatar {
 
 .container {
   padding: 16px;
+  /* padding-right: 450px;
+  padding-left: 450px; */
 }
 
 span.psw {
@@ -63,4 +66,21 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+/* .login-form {
+  margin-left: 100;
+  margin-right: 100;
+} */
+
+/* .title {
+  font-size: 500px;
+} */
+
+.register-button {
+  color: #3dcdf5;
+}
+
+a {
+  text-decoration: none !important;
 }
