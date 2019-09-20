@@ -48,8 +48,18 @@ img.avatar {
 
 .container {
   padding: 16px;
+  /* padding-left: 150px;
+  padding-right: 150px; */
   /* padding-right: 450px;
   padding-left: 450px; */
+  /* padding-left: "20px";
+  padding-right: "20px"; */
+}
+
+.outer-container {
+  width: 350px;
+  margin-left: 550px;
+  /* margin-top: 200px; */
 }
 
 span.psw {
@@ -71,10 +81,11 @@ span.psw {
 /* .login-form {
   margin-left: 100;
   margin-right: 100;
+  margin-top: "20px"
 } */
 
 /* .title {
-  font-size: 500px;
+  margin-bottom: "100px";
 } */
 
 .register-button {
@@ -84,3 +95,7 @@ span.psw {
 a {
   text-decoration: none !important;
 }
+
+/* b {
+  font-style: none !important;
+} */

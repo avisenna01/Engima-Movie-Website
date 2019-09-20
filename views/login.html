@@ -5,32 +5,38 @@
     <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
   </head>
   <body>
-    <h2>Login Page</h2>
+    <div style="margin-top:130px;">
+      <h2 style="margin-left:550px;">Login Page</h2>
+    </div>
 
-    <form method="post">
-      <!-- <div class="login-form"> -->
-      <div class="imgcontainer">
-        <p class="title">Welcome to <b>Engi</b>ma!</p>
-      </div>
+    <div class="outer-container">
+      <form class="container" method="post">
+        <!-- <div class="login-form"> -->
+        <div class="imgcontainer">
+          <p>Welcome to <b>Engi</b>ma!</p>
+        </div>
 
-      <div class="container">
-        <label for="uname"><b>Email</b></label>
-        <input type="text" placeholder="john@doe.com" name="uname" required />
+        <div class="container">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="john@doe.com" name="uname" required />
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="place here" name="psw" required />
-        <button type="submit">Login</button>
-      </div>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="place here" name="psw" required />
+          <button type="submit">Login</button>
+        </div>
 
-      <div class="container" style="background-color:#f1f1f1">
-        <center>
-          <span
-            >Don't have an account?
-            <a href="/register" class="register-button">Register here</a></span
-          >
-        </center>
-      </div>
-      <!-- </div> -->
-    </form>
+        <div class="container">
+          <center>
+            <span
+              >Don't have an account?
+              <a href="/register" class="register-button"
+                >Register here</a
+              ></span
+            >
+          </center>
+        </div>
+        <!-- </div> -->
+      </form>
+    </div>
   </body>
 </html>
