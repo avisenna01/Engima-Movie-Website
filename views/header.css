@@ -16,10 +16,10 @@
 }
 
 .menu {
-  border: 2px solid black; /* For debugging */
+  /* border: 2px solid black;  */
   width: 900px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   justify-content: space-around;
 }
 
