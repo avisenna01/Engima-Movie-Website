@@ -1,0 +1,52 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.heading {
+  margin-top: 10vh;
+  border-bottom-style: solid;
+}
+
+.ticket-section {
+  padding: 20px;
+  display: flex;
+}
+
+.seat-section {
+  width: 40vw;
+  padding-left: 0%;
+  margin-right: 20px;
+}
+
+.screen {
+  width: 37vw;
+}
+
+li {
+  margin: auto;
+  display: inline-block;
+}
+
+button {
+  background: white;
+  color: deepskyblue;
+  border-color: deepskyblue;
+  border-radius: 4px;
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+}
+
+button:focus {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.screen {
+  background-color: grey;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
