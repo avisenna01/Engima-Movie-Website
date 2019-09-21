@@ -143,10 +143,14 @@ a {
 
 .browse-button {
   background-color: #bebdbf;
+  margin-left: 3.5px;
+  width: 250px;
 }
 
 .text-label {
   font-weight: lighter;
+  /* margin-left: 3.5px;
+  width: 250px; */
 }
 
 .text-field {
@@ -155,4 +159,9 @@ a {
 
 .submit-button {
   margin-bottom: -50px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
 }
