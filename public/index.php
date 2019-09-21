@@ -16,6 +16,9 @@
 		case '/login' :
 			require __DIR__ . '/../views/login.html';
 			break;
+		case '/register' :
+			require __DIR__ . '/../views/register.html';
+			break;
 	    default:
 	        require __DIR__ . '/../views/fail.html';
 	        break;

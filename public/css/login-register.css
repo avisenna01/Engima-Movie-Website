@@ -165,3 +165,7 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.profile-pic input{
+  margin-right:3.5px;
+}
