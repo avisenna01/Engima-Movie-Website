@@ -48,6 +48,7 @@ img.avatar {
 
 .container {
   padding: 16px;
+  /* padding-bottom: 0; */
   /* padding-left: 150px;
   padding-right: 150px; */
   /* padding-right: 450px;
@@ -57,7 +58,7 @@ img.avatar {
 }
 
 .outer-container {
-  width: 350px;
+  width: 380px;
   margin-left: 550px;
   margin-top: 200px;
 }
@@ -90,6 +91,17 @@ span.psw {
 
 .register-button {
   color: #3dcdf5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.redirect-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+.login-button {
+  color: #3dcdf5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 a {
@@ -99,3 +111,7 @@ a {
 /* b {
   font-style: none !important;
 } */
+
+.browse-button {
+  background-color: #bebdbf;
+}
