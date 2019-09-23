@@ -2,10 +2,10 @@
 	$request = $_SERVER['REQUEST_URI'];
 	switch ($request) {
 	    case '/' :
-	        require __DIR__ . '/../app/views/index.html';
+	        require __DIR__ . '/../app/views/homepage.html';
 	        break;
 	    case '' :
-	        require __DIR__ . '/../app/views/index.html';
+	        require __DIR__ . '/../app/views/homepage.html';
 	        break;
 	    case '/connect' :
 	        require __DIR__ . '/../app/controller/connectTest.php';
