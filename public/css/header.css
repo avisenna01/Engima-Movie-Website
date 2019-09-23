@@ -22,6 +22,7 @@
 .trans-log {
   border: 1px solid #fff; /* For debugging */
   display: flex;
+  margin-left: 500px;
 }
 
 .engima-search {
@@ -30,7 +31,7 @@
 
 .engima {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-left: -10px;
+  margin-left: 250px;
 }
 
 a.dashboard {
@@ -43,19 +44,20 @@ b.engi {
 }
 
 input.search {
-  width: 300px;
+  /* width: 500px; */
+  /* width: 600px; */
   padding: 5px;
   border-radius: 2.5px;
   border-width: 0.5px;
-  margin-left: 20px;
-  margin-right: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .magnifier {
   width: 17.5px;
   height: 17.5px;
   position: fixed;
-  margin-left: -55px;
+  margin-left: 495px;
   margin-top: 4px;
 }
 
@@ -69,4 +71,5 @@ a.transaction {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none !important;
   color: black;
+  margin-left: 15px;
 }
