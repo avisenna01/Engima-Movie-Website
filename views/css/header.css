@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+       url('../webfonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../webfonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+.menu-container {
+  color: black;
+  background-color: white; /* Blue */
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(194, 190, 194, 0.96);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(194, 190, 194, 0.96);
+  box-shadow: 0px 0px 7px 0px rgba(194, 190, 194, 0.96);
+  display: flex;
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+}
+
+.trans-log {
+  border: 1px solid #fff; /* For debugging */
+  display: flex;
+  margin-left: 250px;
+}
+
+.engima-search {
+  display: flex;
+}
+
+.engima {
+  font-family: Raleway;
+  font-weight: bold;
+  margin-left: 305px;
+}
+
+a.dashboard {
+  text-decoration: none !important;
+  color: black;
+}
+
+b.engi {
+  color: rgb(0, 193, 236);
+  font-weight: bolder;
+}
+
+input.search {
+  width: 230px; 
+  padding: 2.8px;
+  border-radius: 5px;
+  border-width: thin;
+  margin-left: 60px;
+}
+
+input.search::placeholder {
+  font-family: Raleway;
+  font-size: 10px;
+  font-weight: bolder;
+  color: gray;
+  padding-left: 5px
+}
+
+.search-bar{
+  justify-content: center;
+  display: flex;
+}
+
+.magnifier img{
+  width: 17.5px;
+  height: 17.5px;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+
+a.transaction {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none !important;
+  color: black;
+  align-items: center;
+  display: flex;
+}
+
+.logout {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none !important;
+  color: black;
+  margin-left: 50px;
+  align-items: center;
+  display: flex;
+}
