@@ -15,7 +15,10 @@
 	        break;
 	    case '/head' :
 	        require __DIR__ . '/../app/views/header.html';
-	        break;
+			break;
+		case '/movie/description' :
+			require __DIR__ . '/../app/views/movie-desc.html';
+			break;
 	    default:
 	        require __DIR__ . '/../app/views/fail.html';
 	        break;
