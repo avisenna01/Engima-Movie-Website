@@ -32,6 +32,7 @@ img.movie-image {
 .main-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
   background: white;
@@ -160,6 +161,8 @@ img.movie-image {
   font-size: 20px;
   margin-left: 15px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .divider {
@@ -183,6 +186,12 @@ img.movie-image {
   margin-left: 10px;
 }
 
+.blue-next {
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+}
+
 .schedules-content {
   display: flex;
   justify-content: space-between;
@@ -194,4 +203,57 @@ img.movie-image {
   display: flex;
   /* margin: 0px 35px; */
   /* justify-content: flex-end; */
+}
+
+.avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+}
+
+.review-row {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: top;
+}
+
+.review-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.user-rating {
+  width: 20px;
+  height: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.tabletop {
+  border-top: 0;
+}
+
+.score {
+  font-size: 20px;
+}
+
+.total-score {
+  font-size: 10px;
 }
