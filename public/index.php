@@ -17,7 +17,7 @@
 	        require __DIR__ . '/../app/views/header.html';
 			break;
 		case '/movie' :
-			require __DIR__ . '/../app/views/moviedesc.html';
+			require __DIR__ . '/../app/views/movie-desc.html';
 			break;
 	    default:
 	        require __DIR__ . '/../app/views/fail.html';
