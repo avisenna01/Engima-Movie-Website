@@ -10,12 +10,14 @@
 .movie {
   margin: 30px;
   height: 300px;
+  margin-bottom: 10px;
+  /* margin-left: 20px; */
 }
 
 img.movie-image {
   border-radius: 7.5px 7.5px 7.5px 7.5px;
-  width: 220px;
-  height: 100%;
+  width: 180px;
+  height: 240px;
 }
 
 .main-container {
@@ -30,7 +32,13 @@ img.movie-image {
 .upper-container {
   display: flex;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 25px;
+  height: 320px;
+  /* width: 200px; */
+  /* padding-left: 1000px;
+  padding-right: 1000px;
+  margin-left: 1000px;
+  margin-right: 1000px; */
 }
 
 .lower-container {
@@ -72,24 +80,26 @@ img.movie-image {
 }
 
 .description {
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 53px;
+  height: 100px;
 }
 
 .schedules {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-right: 10px;
-  width: 550px;
-  height: 430px;
+  width: 450px;
+  height: 100%;
   border-radius: 5px;
 }
 
 .reviews {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-left: 10px;
+  margin-left: 20px;
   width: 450px;
-  height: 400px;
+  height: 100%;
   border-radius: 5px;
+  padding-bottom: 10px;
 }
 
 .rating {
@@ -119,7 +129,7 @@ img.movie-image {
 }
 
 .brief-explanation {
-  width: 790px;
+  width: 735px;
 }
 
 .schedules-title {
@@ -213,6 +223,7 @@ img.movie-image {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  color: #8c8b8b;
 }
 
 .user-rating {
@@ -231,6 +242,8 @@ th {
   border-top: 1px solid #dddddd;
   text-align: left;
   padding: 12px;
+  font-size: 12px;
+  color: #8c8b8b;
   /* border-radius: 1000px; */
 }
 
