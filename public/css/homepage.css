@@ -3,12 +3,12 @@
   background-color: #2b2821;
   padding-left: 60px;
   padding-right: 60px;
-  height: 722px;
+  height: 922px;
 }
 
 .homepage {
   background-color: white;
-  height: 722px;
+  height: 922px;
 }
 
 b.name-color {
@@ -39,17 +39,18 @@ b.name-color {
 
 .films-container {
   padding-top: 20px;
-  margin-left: 100px;
+  margin-left: 55px;
   margin-top: 20px;
   justify-content: flex-start;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .film {
   width: 100px;
   height: 150px;
   border-radius: 10px;
-  margin: 5px 43px 5px 43px;
+  margin: 58px 43px 58px 43px;
 }
 
 .description-film {
