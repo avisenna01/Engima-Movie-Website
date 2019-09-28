@@ -5,19 +5,21 @@
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
+  font-family: Raleway-Bold;
 }
 
 .movie {
   margin: 30px;
   height: 300px;
   margin-bottom: 10px;
+  font-weight: bolder;
   /* margin-left: 20px; */
 }
 
-img.movie-image {
+.movie-image {
   border-radius: 7.5px 7.5px 7.5px 7.5px;
-  width: 180px;
-  height: 240px;
+  width: 160px;
+  height: 200px;
 }
 
 .main-container {
@@ -32,19 +34,14 @@ img.movie-image {
 .upper-container {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  height: 320px;
-  /* width: 200px; */
-  /* padding-left: 1000px;
-  padding-right: 1000px;
-  margin-left: 1000px;
-  margin-right: 1000px; */
+  margin-top: 15px;
+  height: 280px;
 }
 
 .lower-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 146px;
 }
 
 .genre-time {
@@ -54,22 +51,23 @@ img.movie-image {
 
 .genre {
   height: 25px;
-  margin-bottom: 11px;
+  margin-bottom: 5px;
   display: flex;
 }
 
 .genre-item {
   display: flex;
   margin-top: 6px;
+  font-size: 12px;
 }
 
 .symbol-separate {
   color: rgb(21, 125, 150);
   display: inline;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: lighter;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .star {
@@ -87,8 +85,9 @@ img.movie-image {
 
 .schedules {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
   margin-right: 10px;
-  width: 450px;
+  width: 480px;
   height: 100%;
   border-radius: 5px;
 }
@@ -96,7 +95,7 @@ img.movie-image {
 .reviews {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-left: 20px;
-  width: 450px;
+  width: 400px;
   height: 100%;
   border-radius: 5px;
   padding-bottom: 10px;
@@ -120,30 +119,34 @@ img.movie-image {
 
 .movie-title {
   margin-bottom: 8px;
-  font-size: 33px;
+  font-size: 26px;
 }
 
 .released-date {
-  margin-top: 4px;
+  font-family: Raleway;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .brief-explanation {
-  width: 735px;
+  font-family: Raleway;
+  width: 600px;
+  font-size: 12px;
+  margin-right: 100px;
 }
 
 .schedules-title {
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .reviews-title {
-  font-size: 20px;
+  font-size: 14px;
   margin-left: 15px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -183,12 +186,16 @@ img.movie-image {
 
 .not-available {
   color: red;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
 }
 
 .available {
   color: aqua;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .schedules-content {
@@ -203,8 +210,8 @@ img.movie-image {
 }
 
 .avatar {
-  height: 70px;
-  width: 70px;
+  height: 30px;
+  width: 30px;
   border-radius: 50px;
 }
 
@@ -224,27 +231,32 @@ img.movie-image {
   flex-direction: column;
   margin-left: 20px;
   color: #8c8b8b;
+  font-size: 10px;
+  font-weight: lighter;
 }
 
+
 .user-rating {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  font-weight: bold;
 }
 
 td,
 th {
   border-top: 1px solid #dddddd;
   text-align: left;
-  padding: 12px;
-  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  font-size: 8px;
   color: #8c8b8b;
-  /* border-radius: 1000px; */
 }
 
 .tabletop {
@@ -252,7 +264,7 @@ th {
 }
 
 .score {
-  font-size: 20px;
+  font-size: 14px;
   margin-left: 7.5px;
   margin-right: 3px;
 }
@@ -268,9 +280,17 @@ th {
 }
 
 .slash {
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .review-text-info {
-  font-size: 15px;
+  font-size: 8px;
+}
+
+td.seats-num{
+  font-weight: bolder;
+}
+
+.seats-date{
+  padding-left: 10px;
 }
