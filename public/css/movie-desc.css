@@ -1,11 +1,6 @@
 .base {
-  /* background-color: #1c1514; */
-  /* position: absolute; */
   display: flex;
   justify-content: center;
-  /* position: absolute; */
-  /* z-index: -1; */
-  /* z-index: -10; */
   background-color: #2b2821;
   padding-left: 30px;
   padding-right: 30px;
@@ -13,15 +8,9 @@
 }
 
 .movie {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  /* transition: 0.3s; */
   margin: 30px;
   height: 300px;
 }
-
-/* .movie:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
 
 img.movie-image {
   border-radius: 7.5px 7.5px 7.5px 7.5px;
@@ -36,58 +25,43 @@ img.movie-image {
   flex-direction: column;
   width: 80%;
   background: white;
-  /* position: fixed; */
 }
 
 .upper-container {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .lower-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .genre-time {
   color: rgb(21, 125, 150);
-  /* margin-bottom: 14px; */
   display: inline;
-  /* margin-left: -10px; */
-  /* vertical-align: middle; */
-
-  /* align-items: center; */
-  /* align-items: center; */
 }
 
 .genre {
   height: 25px;
   margin-bottom: 11px;
   display: flex;
-  /* justify-content: center; */
 }
 
 .genre-item {
-  /* align-items: center; */
   display: flex;
   margin-top: 6px;
-  /* margin-left: 10px;
-  margin-right: 5px; */
 }
 
 .symbol-separate {
   color: rgb(21, 125, 150);
-  /* margin-bottom: 4px; */
   display: inline;
   font-size: 28px;
-  /* height: 40px; */
   font-weight: lighter;
   margin-right: 10px;
   margin-left: 10px;
-  /* align-items: center; */
-  /* font-family: "lato"; */
 }
 
 .star {
@@ -114,7 +88,7 @@ img.movie-image {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-left: 10px;
   width: 450px;
-  height: 375px;
+  height: 390px;
   border-radius: 5px;
 }
 
@@ -131,7 +105,6 @@ img.movie-image {
 
 .score2 {
   font-size: 15px;
-  /* align-items: center; */
   margin-top: 5px;
 }
 
@@ -173,6 +146,12 @@ img.movie-image {
   margin-bottom: 10px;
 }
 
+.divider-review {
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .schedules-info {
   display: flex;
   justify-content: space-between;
@@ -201,8 +180,6 @@ img.movie-image {
 
 .schedules-availability {
   display: flex;
-  /* margin: 0px 35px; */
-  /* justify-content: flex-end; */
 }
 
 .avatar {
@@ -244,6 +221,7 @@ th {
   border-top: 1px solid #dddddd;
   text-align: left;
   padding: 12px;
+  /* border-radius: 1000px; */
 }
 
 .tabletop {
@@ -252,8 +230,24 @@ th {
 
 .score {
   font-size: 20px;
+  margin-left: 7.5px;
+  margin-right: 3px;
 }
 
 .total-score {
-  font-size: 10px;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.review-rating {
+  display: flex;
+  justify-content: left;
+}
+
+.slash {
+  font-size: 12px;
+}
+
+.review-text-info {
+  font-size: 15px;
 }
