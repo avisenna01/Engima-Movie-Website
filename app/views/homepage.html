@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/homepage.css" media="screen" />
     <script type="text/javascript" src="js/include.js"></script>
+    <script type="text/javascript" src="js/get.js"></script>
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <h1 class="hello">
         Hello
       </h1>
-      <h1 class="name">, <b>gery.wahyu</b>!</h1>
+      <h1 class="name">, <b id="username"></b>!</h1>
     </div>
 
     <p class="now-play">Now Playing</p>
@@ -33,4 +34,7 @@
     </div>
   </body>
 </html>
-<script type="text/javascript">window.onload = includeHTML();</script>
+<script type="text/javascript">window.onload = function () {
+  includeHTML();
+  getJSON();
+};</script>
