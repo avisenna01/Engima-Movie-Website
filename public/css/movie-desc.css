@@ -1,6 +1,15 @@
 .base {
   /* background-color: #1c1514; */
   /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  /* z-index: -1; */
+  /* z-index: -10; */
+  background-color: #2b2821;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
 }
 
 .movie {
@@ -24,6 +33,8 @@ img.movie-image {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 80%;
+  background: white;
   /* position: fixed; */
 }
 
@@ -41,23 +52,39 @@ img.movie-image {
 
 .genre-time {
   color: rgb(21, 125, 150);
-  /* margin-bottom: 4px; */
+  /* margin-bottom: 14px; */
   display: inline;
+  /* margin-left: -10px; */
+  /* vertical-align: middle; */
+
+  /* align-items: center; */
   /* align-items: center; */
 }
 
 .genre {
+  height: 25px;
   margin-bottom: 11px;
-  /* display: flex; */
+  display: flex;
   /* justify-content: center; */
 }
 
-.symbol-seperate {
+.genre-item {
+  /* align-items: center; */
+  display: flex;
+  margin-top: 6px;
+  /* margin-left: 10px;
+  margin-right: 5px; */
+}
+
+.symbol-separate {
   color: rgb(21, 125, 150);
   /* margin-bottom: 4px; */
   display: inline;
-  font-size: 30px;
+  font-size: 28px;
+  /* height: 40px; */
   font-weight: lighter;
+  margin-right: 10px;
+  margin-left: 10px;
   /* align-items: center; */
   /* font-family: "lato"; */
 }
@@ -108,7 +135,8 @@ img.movie-image {
 }
 
 .movie-title {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-size: 33px;
 }
 
 .released-date {
@@ -124,6 +152,8 @@ img.movie-image {
   font-size: 20px;
   margin-top: 20px;
   margin-left: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .reviews-title {
@@ -133,10 +163,35 @@ img.movie-image {
 }
 
 .divider {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.schedules-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 15px;
+  font-size: 13px;
+}
+
+.red-cross {
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+.schedules-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 15px;
+  font-size: 13px;
+}
+
+.schedules-availability {
+  display: flex;
+  /* margin: 0px 35px; */
+  /* justify-content: flex-end; */
 }
