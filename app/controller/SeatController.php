@@ -5,4 +5,3 @@ class SeatController extends Controller{
 		# code...
 	}
 }
-?>

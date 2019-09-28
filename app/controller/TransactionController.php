@@ -5,4 +5,3 @@ class TransactionController extends Controller{
 		# code...
 	}
 }
-?>

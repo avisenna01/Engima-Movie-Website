@@ -5,4 +5,3 @@ class ScheduleController extends Controller{
 		# code...
 	}
 }
-?>
