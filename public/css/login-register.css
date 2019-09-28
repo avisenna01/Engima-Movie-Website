@@ -1,19 +1,29 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+.base-login {
+  font-family: "Raleway-Bold";
   justify-content: center;
   align-items: center;
   display: flex;
-  /* flex-direction: column; */
-  /* margin-top: 50px; */
 }
-form {
-  /* border: 3px solid #f1f1f1; */
+
+form.container {
   -webkit-box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
   -moz-box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
   box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
-
-  /* justify-content: center;
-  align-items: center; */
 }
 
 input[type="text"],
@@ -61,35 +71,16 @@ img.avatar {
 .container {
   padding: 16px;
   border-radius: 5px;
-  /* justify-content: center;
-  align-items: center;
-  display: flex; */
-  /* padding-top: 0px; */
-  /* padding-bottom: 0; */
-  /* padding-left: 150px;
-  padding-right: 150px; */
-  /* padding-right: 450px;
-  padding-left: 450px; */
-  /* padding-left: "20px";
-  padding-right: "20px"; */
 }
 
 .register-outer-container {
   width: 380px;
-  /* margin-left: 550px; */
   margin-top: 50px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .login-outer-container {
   width: 380px;
-  /* margin-left: 550px; */
   margin-top: 200px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 span.psw {
@@ -97,7 +88,6 @@ span.psw {
   padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -107,16 +97,6 @@ span.psw {
     width: 100%;
   }
 }
-
-/* .login-form {
-  margin-left: 100;
-  margin-right: 100;
-  margin-top: "20px"
-} */
-
-/* .title {
-  margin-bottom: "100px";
-} */
 
 .register-button {
   color: #3dcdf5;
@@ -137,10 +117,6 @@ a {
   text-decoration: none !important;
 }
 
-/* b {
-  font-style: none !important;
-} */
-
 .browse-button {
   background-color: #bebdbf;
   margin-left: 3.5px;
@@ -149,12 +125,20 @@ a {
 
 .text-label {
   font-weight: lighter;
-  /* margin-left: 3.5px;
-  width: 250px; */
 }
 
 .text-field {
+  margin-top: 8.5px;
   border-radius: 5px;
+  border: 1px solid;
+  width: 170px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.input-file {
+  display: flex;
+  justify-content: center;
 }
 
 .submit-button {
@@ -166,6 +150,9 @@ a {
   justify-content: center;
 }
 
-.profile-pic input{
-  margin-right:3.5px;
+.profile-pic input {
+  margin-right: 3.5px;
+}
+
+#error-username {
 }
