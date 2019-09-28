@@ -8,12 +8,6 @@
 	    case '' :
 	        require __DIR__ . '/../app/views/homepage.html';
 	        break;
-	    case 'home' :
-	        require __DIR__ . '/../app/views/homepage.html';
-	        break;
-	    case 'connect' :
-	        require __DIR__ . '/../app/controller/connectTest.php';
-	        break;
 	    case 'load' :
 	        require __DIR__ . '/../app/controller/load.php';
 	        break;
@@ -35,8 +29,14 @@
 	    		case 'seat':
 	    			$controller = $url[1].'controller';
 	    			require_once '../app/controller/'.$controller.'.php';
-	    			$controller = new $controller;
-	    			call_user_func_array([$controller, 'test'], []);
+	    			$controller = new $controller();
+	    			$method = 'fail';
+	    			if( isset($url[2]) ) {
+			            if( method_exists($controller, $url[2]) ) {
+			                $method = $url[2];
+			            }
+			        }
+	    			call_user_func_array([$controller, $method], []);
 	    			break;
 	    		default:
 	    			$response = [
@@ -46,8 +46,6 @@
 	    			echo json_encode($response);
 	    			break;
 	    	}
-	    	break;
-	    case 'hua':
 	    	break;
 	    default:
 	        require __DIR__ . '/../app/views/fail.html';
