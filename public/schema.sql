@@ -139,6 +139,7 @@ CREATE TABLE `user` (
   `phone_number` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `picture` varchar(255) NOT NULL,
+  `accesstoken` varchar(255),
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `user_username_unique` (`username`),
   UNIQUE KEY `user_email_unique` (`email`),
