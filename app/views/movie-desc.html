@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>moviedesc</title>
     <link rel="stylesheet" href="/css/movie-desc.css" />
     <script type="text/javascript" src="/js/include.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header include="/head"></header>
     <div class="main-container">
-        <div class="upper-container">
-            <div class="movie">
-                <img class="movie-image" src="/assets/avengers endgame.jpeg" alt="Movie" />
-                <!-- <div class="container"><h4><b>Jane Doe</b></h4><p>Interior Designer</p></div> --></div>
-            <div class="description">
-                <h2>Avengers: Endgame</h2>
-                <p class="genre-time">Drama, Fantasy, Adventure | 187 mins</p>
-                <p>Released date: April 17, 2019</p><img class="rating" src="/assets/star1.svg" alt="Rating" />
-                <p>lorem ipsum tralalalalalalla anjay anjay gnjewngjoenw gejwogjeowgoigowerhjgoewg ijweohgioewhgewo higweohgieowgh igeowhgieoih</p>
-            </div>
+      <div class="upper-container">
+        <div class="movie">
+          <img
+            class="movie-image"
+            src="/assets/avengers endgame.jpeg"
+            alt="Movie"
+          />
         </div>
-        <div class="lower-container">
-            <div>don chaka don chaka</div>
-            <div>lesgooo lesgooo</div>
+        <div class="description">
+          <h2 class="movie-title">Avengers: Endgame</h2>
+          <div class="genre">
+            <p class="genre-time">Drama, Fantasy, Adventure</p>
+            <p class="symbol-seperate">|</p>
+            <p class="genre-time">187 mins</p>
+          </div>
+          <p class="released-date">Released date: April 17, 2019</p>
+          <div class="rating">
+            <img class="star" src="/assets/star1.svg" alt="Rating" />
+            <p class="score1">8.75</p>
+            <p class="score2">/10</p>
+          </div>
+          <p class="brief-explanation">
+            After the devastating events of Avengers: Infinity War (2018), the
+            universe is in ruins. With the help of remaining allies, the
+            Avengers assemvle once more in order to reverse Thanos' actions and
+            restore balance to the universe.
+          </p>
         </div>
+      </div>
+      <div class="lower-container">
+        <div class="schedules">don chaka don chaka</div>
+        <div class="reviews">lesgooo lesgooo</div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 <script type="text/javascript">
-    window.onload = includeHTML();
+  window.onload = includeHTML();
 </script>
