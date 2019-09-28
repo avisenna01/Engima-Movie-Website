@@ -14,30 +14,34 @@ b.name-color {
 .heading {
   display: flex;
   justify-content: left;
-  margin-left: 75px;
+  margin-left: 45px;
 }
 
 .now-play {
   font-size: 21px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 75px;
+  margin-left: 45px;
 }
 
-img {
+.film-poster-container {
+  width: 230px;
+}
+
+.film-poster {
   border-radius: 10px 10px 0 0;
 }
 
 .films-container {
   justify-content: flex-start;
   display: flex;
-  margin-left: 60px;
+  /* margin-left: 60px; */
 }
 
 .film {
   width: 170px;
   height: 185px;
   border-radius: 10px;
-  margin: 5px 13px 5px 13px;
+  margin: 5px 43px 5px 43px;
 }
 
 .description-film {
