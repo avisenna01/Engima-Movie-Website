@@ -122,12 +122,12 @@
 }
 
 .rating-star > label:before { 
-  font-size: 1.8em;
   display: inline-block;
 }
 
 .rating-star > label {
 	color: #ddd;
+	font-size: 1.8em;
 	float: right; /* reverses the order of the radio buttons */
 }
 
