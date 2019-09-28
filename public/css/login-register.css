@@ -14,7 +14,7 @@
 }
 
 .base-login {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway";
   justify-content: center;
   align-items: center;
   display: flex;
@@ -61,6 +61,11 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
   font-size: 18px;
+  font-family: Raleway-Bold;
+}
+
+.imgcontainer p b {
+  font-family: "Raleway-ExtraBold";
 }
 
 img.avatar {
@@ -155,4 +160,83 @@ a {
 }
 
 #error-username {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#username-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-username {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#error-email {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#email-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-email {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#error-phone {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#phone-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-phone {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#invalid-login {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  display: none;
+}
+
+.have-account {
+  text-align: center;
 }

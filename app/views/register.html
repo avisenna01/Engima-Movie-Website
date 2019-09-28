@@ -26,8 +26,11 @@
               name="uname"
               required
             />
-            <p>testing</p>
-
+            <div id="error-text-username">
+              <p id="error-username">Username</p>
+              <p id="username-existed">wrong</p>
+              <p id="error-username">is exist! Please use another username.</p>
+            </div>
             <label for="email" class="text-label">Email Address</label>
             <input
               class="text-field"
@@ -36,6 +39,11 @@
               name="email"
               required
             />
+            <div id="error-text-email">
+              <p id="error-email">Email</p>
+              <p id="email-existed">wrong</p>
+              <p id="error-email">is exist! Please use another email.</p>
+            </div>
 
             <label for="phone" class="text-label">Phone Number</label>
             <input
@@ -45,6 +53,12 @@
               name="phone"
               required
             />
+
+            <div id="error-text-phone">
+              <p id="error-phone">Phone number</p>
+              <p id="phone-existed">wrong</p>
+              <p id="error-phone">is exist! Please use another number.</p>
+            </div>
 
             <label for="psw" class="text-label">Password</label>
             <input
