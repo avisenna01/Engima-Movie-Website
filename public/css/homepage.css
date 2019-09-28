@@ -1,66 +1,59 @@
-.name {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .base-homepage {
+  font-family: Raleway-Bold;
   background-color: #2b2821;
   padding-left: 60px;
   padding-right: 60px;
-  height: 800px;
+  height: 722px;
 }
 
 .homepage {
   background-color: white;
-  height: 800px;
+  height: 722px;
 }
 
 b.name-color {
   color: #3fddfc;
 }
 
-.hello {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
 .heading {
   display: flex;
   justify-content: left;
-  margin-left: 15px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
 
 .now-play {
   font-size: 21px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 15px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
 
 .film-poster-container {
-  width: 230px;
-  /* height: 10px; */
+  width: 50px;
 }
 
 .film-poster {
   border-radius: 10px;
-  height: 310px;
+  height: 200px;
 }
 
 .films-container {
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-top: 20px;
   justify-content: flex-start;
   display: flex;
-  /* margin-left: 60px; */
 }
 
 .film {
-  width: 170px;
-  height: 185px;
+  width: 100px;
+  height: 150px;
   border-radius: 10px;
   margin: 5px 43px 5px 43px;
 }
 
 .description-film {
-  padding: 2px 16px;
-  margin-top: -13px;
+  padding-top: 10px;
 }
 
 .rating-home {
@@ -69,7 +62,6 @@ b.name-color {
 }
 
 .rating-home-description {
-  margin-top: -15px;
   display: flex;
 }
 
@@ -80,5 +72,5 @@ div.rating-home-description p {
 }
 
 h4.film-title {
-  width: 400px;
+  width: 200px;
 }
