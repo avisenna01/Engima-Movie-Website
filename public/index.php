@@ -36,7 +36,7 @@
 	    			$controller = $url[1].'controller';
 	    			require_once '../app/controller/'.$controller.'.php';
 	    			$controller = new $controller;
-	    			call_user_func_array([$controller, 'test'], $_GET);
+	    			call_user_func_array([$controller, 'test'], []);
 	    			break;
 	    		default:
 	    			$response = [
