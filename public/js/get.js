@@ -6,6 +6,6 @@ function getJSON() {
         document.getElementById("username").innerHTML = myObj.username;
       }
     };
-    xmlhttp.open("GET", "/user?id=1", true);
+    xmlhttp.open("GET", "/api/user?id=1", true);
     xmlhttp.send();
 };

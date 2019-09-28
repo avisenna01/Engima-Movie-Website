@@ -1,7 +1,5 @@
 <?php
 	require_once "../app/init.php";
-	/*$controller = new Controller();  
-	$controller->invoke();*/
 	$request = $_SERVER['REQUEST_URI'];
 	$request = trim($request, '/');
 	$get = explode('?', $request);
@@ -28,11 +26,26 @@
 	    case 'test' :
 	        require __DIR__ . '/../app/views/index.html';
 	        break;
-	    case 'user':
-	    	require_once '../app/controller/usercontroller.php';
-	    	$a = new UserController;
-	    	$b = 'test';
-        	call_user_func_array([$a, $b], [$_GET["id"]]);
+	    case 'api':
+	    	switch ($url[1]) {
+	    		case 'user':
+	    		case 'film':
+	    		case 'schedule':
+	    		case 'transaction':
+	    		case 'seat':
+	    			$controller = $url[1].'controller';
+	    			require_once '../app/controller/'.$controller.'.php';
+	    			$controller = new $controller;
+	    			call_user_func_array([$controller, 'test'], $_GET);
+	    			break;
+	    		default:
+	    			$response = [
+	    				"status" => "404",
+	    				"message" => "Error API not found"
+	    			];
+	    			echo json_encode($response);
+	    			break;
+	    	}
 	    	break;
 	    case 'hua':
 	    	break;
