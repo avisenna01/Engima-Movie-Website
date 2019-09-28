@@ -10,6 +10,9 @@
 	    case '' :
 	        require __DIR__ . '/../app/views/homepage.html';
 	        break;
+	    case 'home' :
+	        require __DIR__ . '/../app/views/homepage.html';
+	        break;
 	    case 'connect' :
 	        require __DIR__ . '/../app/controller/connectTest.php';
 	        break;
@@ -26,7 +29,7 @@
 	        require __DIR__ . '/../app/views/index.html';
 	        break;
 	    case 'user':
-	    	require_once '../app/controller/UserController.php';
+	    	require_once '../app/controller/usercontroller.php';
 	    	$a = new UserController;
 	    	$b = 'test';
         	call_user_func_array([$a, $b], [$_GET["id"]]);
