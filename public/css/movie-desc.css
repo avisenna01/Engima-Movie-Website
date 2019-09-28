@@ -34,3 +34,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.genre-time {
+  color: rgb(0, 193, 236);
+}
