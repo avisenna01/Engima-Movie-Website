@@ -1,22 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway.ttf') format('truetype');
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Raleway-Bold';
-  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Raleway-ExtraBold';
-  src: url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
 }
 
 .menu-container {
@@ -61,7 +55,7 @@ b.engi {
 }
 
 input.search {
-  width: 230px; 
+  width: 230px;
   padding: 2.8px;
   border-radius: 5px;
   border-width: thin;
@@ -73,15 +67,15 @@ input.search::placeholder {
   font-size: 10px;
   font-weight: bolder;
   color: gray;
-  padding-left: 5px
+  padding-left: 5px;
 }
 
-.search-bar{
+.search-bar {
   justify-content: center;
   display: flex;
 }
 
-.magnifier img{
+.magnifier img {
   width: 17.5px;
   height: 17.5px;
   margin-left: -20px;
