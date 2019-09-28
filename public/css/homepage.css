@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 b {
+b.name-color {
   color: #3fddfc;
 }
 
@@ -30,7 +30,7 @@ img {
 .films-container {
   justify-content: flex-start;
   display: flex;
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 .film {
@@ -40,6 +40,27 @@ img {
   margin: 5px 13px 5px 13px;
 }
 
-.description {
+.description-film {
   padding: 2px 16px;
+  margin-top: -13px;
+}
+
+.rating-home {
+  height: 16px;
+  width: 16px;
+}
+
+.rating-home-description {
+  margin-top: -15px;
+  display: flex;
+}
+
+div.rating-home-description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+h4.film-title {
+  width: 400px;
 }
