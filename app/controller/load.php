@@ -1,5 +1,5 @@
 <?php
-$sql = file_get_contents('schema.sql');
+$sql = file_get_contents('engima.sql');
 
 $mysqli = new mysqli("localhost", "root", "", "engima");
 if (mysqli_connect_errno()) { /* check connection */
