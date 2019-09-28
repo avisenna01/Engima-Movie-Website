@@ -123,7 +123,6 @@
 
 .rating-star > label:before { 
   font-size: 1.8em;
-  content: "★";
   display: inline-block;
 }
 
