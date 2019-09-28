@@ -4,18 +4,19 @@
   box-sizing: border-box;
 }
 
-/* raleway-regular - latin */
 @font-face {
   font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/raleway-v14-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Raleway'), local('Raleway-Regular'),
-       url('../webfonts/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../webfonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../webfonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../webfonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../webfonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  src: url('../fonts/Raleway.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
 }
 
 .menu-container {
@@ -44,7 +45,11 @@
 }
 
 .engima {
+<<<<<<< HEAD
   font-family: Raleway;
+=======
+  font-family: Lato;
+>>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   margin-left: 305px;
 }
@@ -68,7 +73,11 @@ input.search {
 }
 
 input.search::placeholder {
+<<<<<<< HEAD
   font-family: Raleway;
+=======
+  font-family: Lato;
+>>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-size: 10px;
   font-weight: bolder;
   color: gray;
@@ -88,7 +97,11 @@ input.search::placeholder {
 }
 
 a.transaction {
+<<<<<<< HEAD
   font-family: Raleway;
+=======
+  font-family: Lato;
+>>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   font-size: 10px;
   text-decoration: none !important;
@@ -98,7 +111,11 @@ a.transaction {
 }
 
 .logout {
+<<<<<<< HEAD
   font-family: Raleway;
+=======
+  font-family: Lato;
+>>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   font-size: 10px;
   text-decoration: none !important;

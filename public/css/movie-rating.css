@@ -1,34 +1,39 @@
 .base-container {
 	background-color: grey;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 100vh;
 }
 
 .interface {
-	margin-left: 150px;
-	margin-right: 150px;
-	position: relative;
-	width: 500px;
+	background-color: white;
+	width: 1000px;
 	height: 100%;
 }
 
 .back-image {
+	width: 100%;
+	height: 50px;
 	margin-top: 100px;
-	margin-left: 60px;	
+}
+
+.back-image img{
+	margin-left: 60px;
 	float: left;
 }
 
 .movie-title {
-	float: right;
+	float: left;
 	text-align: left;
 	font-size: 25px;
 	display: inline;
-	margin-left: 80px;
-	margin-right: 500px;
+	margin-top: 20px;
+	margin-left: 40px;
 }
 
 .add-rating-text {
-	margin-top: 50px;
+	margin-top: 200px;
+	margin-left: 100px;
 	float: left;
 	width: 90px;
 	height: 50px;
@@ -42,6 +47,7 @@
 	margin-right: 62px;
 }
 
+/*
 .add-review-text {
 	float: left;
 	width: 90px;
@@ -91,7 +97,7 @@
 
 .rating-star > label:before { 
   display: inline-block;
-}
+}*/
 
 .rating-star > label {
 	color: #ddd;

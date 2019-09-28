@@ -3,41 +3,54 @@
 	<head>
 		<title>Film Review</title>
 		<link rel="stylesheet" type="text/css" href="/css/movie-rating.css">
+		<script type="text/javascript" src="/js/include.js"></script>
 	</head>
 	<body>
+		<header include="/head"></header>
 		<div class="base-container">
-		<div class="interface">
-			<div class="back-image">
-				<img src="assets/pinpng.com-arrow-icon-png-525723.png" height=40px width=40px>
-				<h2 class="movie-title">Movie Title (Placeholder Text)</h2>
-			</div>
-			<div class="add-rating-text">
-			<h4>Add rating</h4>
-			</div>
-			<!-- <form action="php stuff here"> -->
-			<div class="rating-star">
-				<input type="radio" name="rating-star" id="ten-star" value=10><label for="ten-star" title="10/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="nine-star" value=9><label for="nine-star" title="9/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="eight-star" value=8><label for="eight-star" title="8/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="seven-star" value=7><label for="seven-star" title="7/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="six-star" value=6><label for="six-star" title="6/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="five-star" value=5><label for="five-star" title="5/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="four-star" value=4><label for="four-star" title="4/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="three-star" value=3><label for="three-star" title="3/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="two-star" value=2><label for="two-star" title="2/10">&#9733;</label>
-				<input type="radio" name="rating-star" id="one-star"value=1><label for="one-star" title="1/10">&#9733;</label>
-			</div>
-			<div class="add-review-text">
-			<h4>Add review</h4>
-			</div>
-			<div class="review-box">
-				<textarea placeholder="Write your review here" required id="review-text"></textarea>
-			</div>
-			<div class="submit-button">
-				<button type="submit" id="button-submit">Submit</button>
+			<div class="interface">
+				<div class="back-image">
+					<img src="assets/pinpng.com-arrow-icon-png-525723.png" height=40px width=40px>
+					<h2 class="movie-title">Movie Title (Placeholder Text)</h2>
+				</div>
+				<div class="add-rating-text">
+					<h4>Add rating</h4>
+				</div>
+				<!-- <form action="php stuff here"> -->
+				<div class="rating-star">
+					<input type="radio" name="rating-star" id="ten-star" value=10>
+						<label for="ten-star" title="10/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="nine-star" value=9>
+						<label for="nine-star" title="9/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="eight-star" value=8>
+						<label for="eight-star" title="8/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="seven-star" value=7>
+						<label for="seven-star" title="7/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="six-star" value=6>
+						<label for="six-star" title="6/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="five-star" value=5>
+						<label for="five-star" title="5/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="four-star" value=4>
+						<label for="four-star" title="4/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="three-star" value=3>
+						<label for="three-star" title="3/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="two-star" value=2>
+						<label for="two-star" title="2/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="one-star"value=1>
+						<label for="one-star" title="1/10">&#9733;</label>
+				</div>
+				<div class="add-review-text">
+					<h4>Add review</h4>
+				</div>
+				<div class="review-box">
+					<textarea placeholder="Write your review here" required id="review-text"></textarea>
+				</div>
+				<div class="submit-button">
+					<button type="submit" id="button-submit">Submit</button>
+				</div>
+				<!-- </form> -->
 			</div>
 		</div>
-		</div>
-		<!-- </form> -->
 	</body>
 </html>
+<script type="text/javascript">window.onload = function () {includeHTML();};</script>
