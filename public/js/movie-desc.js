@@ -14,8 +14,8 @@ function restructurePage(film) {
     let rating = document.getElementsByClassName("score1")[0];
     rating.innerHTML = film.rating;
 
-    let briefExplanation = document.getElementsByClassName("brief-explanation");
-    briefExplanation.innerHTML = film.description;
+    let briefExplanation = document.getElementsByClassName("brief-explanation")[0];
+    briefExplanation.innerHTML = film.synopsis;
 
     let movieImage = document.getElementsByClassName("movie-image")[0];
     movieImage.setAttribute("src", film.picture);
@@ -26,23 +26,29 @@ function restructureSchedule(schedules) {
 
     schedules.map(schedule => {
         let tr = document.createElement("tr");
-        let date = schedule.showtime;
+        let date = schedule.show_time;
 
         let seatDate = document.createElement("td");
         seatDate.classList.add("seats-date");
-        seatDate.innerHTML = date.getDate();
+        seatDate.innerHTML = date;
 
-        let time = document.createElement("tr");
-        time.innerHTML = date.getTime();
+        let time = document.createElement("td");
+        // time.classList.add("seats-date");
+        time.innerHTML = date;
 
         let seatNum = document.createElement("td");
         seatNum.classList.add("seats-num")
         seatNum.innerHTML = "30 seats";
 
+        let img = document.createElement("img");
+        img.classList.add("blue-next");
+        img.setAttribute("src", "/assets/next-icon.png");
+
         let available = document.createElement("td");
         available.classList.add("available");
         available.innerHTML = "Book Now";
 
+        available.appendChild(img);
         tr.appendChild(seatDate);
         tr.appendChild(time);
         tr.appendChild(seatNum);
@@ -86,6 +92,7 @@ function getSchedule() {
         if (this.readyState == 4 && this.status == 200) {
             let myObj = JSON.parse(this.responseText);
             if (myObj != null) {
+                console.log(myObj);
                 restructureSchedule(myObj);
             }
         }
@@ -94,4 +101,5 @@ function getSchedule() {
     xmlhttp.send();
 }
 
+getSchedule();
 getFilm();
