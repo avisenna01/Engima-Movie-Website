@@ -1,3 +1,9 @@
+let modal = document.getElementsByClassName("modal");
+let buyTicketButton = document.getElementsByClassName("ticket-button");
+let seatDetails = document.getElementsByClassName("seat-details");
+let summary = document.getElementsByClassName("summary");
+let transButton = document.getElementById('trans-button');
+
 function restructureSeatButton(seats) {
   let ol = document.getElementsByClassName("seat-section")[0];
 
@@ -45,16 +51,6 @@ function getAllSeats() {
   xmlhttp.send();
 }
 
-getAllSeats();
-
-
-
-let modal = document.getElementsByClassName("modal");
-let buyTicketButton = document.getElementsByClassName("ticket-button");
-let seatDetails = document.getElementsByClassName("seat-details");
-let summary = document.getElementsByClassName("summary");
-let transButton = document.getElementById('trans-button');
-
 function checkout() {
   summary[0].children[1].style.display = "none";
   seatDetails[0].style.display = "block";
@@ -70,5 +66,29 @@ function redirect() {
   location.replace("http://localhost:8080/transaction");
 }
 
+function takeSeat() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var myObj = JSON.parse(this.responseText);
+      if (myObj.status == "404") {
+        document.getElementById("invalid-login").style.display = "block";
+      }
+      else {
+        [myObj] = myObj;
+        setCookie("username", myObj.username, 1 / (24 * 30));
+        setCookie("accesstoken", myObj.accesstoken, 1 / (24 * 30));
+        location.replace("http://localhost:8080");
+      }
+    }
+  };
+  xmlhttp.open("POST", "/api/user/login", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("uname=" + uname.value + "&psw=" + pass.value);
+}
+
+console.log(buyTicketButton);
+
+getAllSeats();
 transButton.addEventListener("click", redirect);
 buyTicketButton[0].addEventListener("click", successMessage);
