@@ -14,6 +14,8 @@
 	    case 'head' :
 	        require __DIR__ . '/../app/views/header.html';
 	        break;
+	    case 'movie' :
+	        require __DIR__ . '/../app/views/movie-desc.html';
 	    case 'booking' :
 	        require __DIR__ . '/../app/views/booking.html';
 	        break;

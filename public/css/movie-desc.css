@@ -1,0 +1,296 @@
+.base {
+  display: flex;
+  justify-content: center;
+  background-color: #2b2821;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  font-family: Raleway-Bold;
+}
+
+.movie {
+  margin: 30px;
+  height: 300px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  /* margin-left: 20px; */
+}
+
+.movie-image {
+  border-radius: 7.5px 7.5px 7.5px 7.5px;
+  width: 160px;
+  height: 200px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background: white;
+}
+
+.upper-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  height: 280px;
+}
+
+.lower-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 146px;
+}
+
+.genre-time {
+  color: rgb(21, 125, 150);
+  display: inline;
+}
+
+.genre {
+  height: 25px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.genre-item {
+  display: flex;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.symbol-separate {
+  color: rgb(21, 125, 150);
+  display: inline;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.star {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.description {
+  margin-left: 5px;
+  margin-top: 53px;
+  height: 100px;
+}
+
+.schedules {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 480px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.reviews {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  width: 400px;
+  height: 100%;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+}
+
+.score1 {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.score2 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.movie-title {
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+.released-date {
+  font-family: Raleway;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.brief-explanation {
+  font-family: Raleway;
+  width: 600px;
+  font-size: 12px;
+  margin-right: 100px;
+}
+
+.schedules-title {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.reviews-title {
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.divider {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.divider-review {
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.schedules-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 15px;
+  font-size: 13px;
+}
+
+.red-cross {
+  height: 18.5px;
+  width: 18.5px;
+  margin-left: 10px;
+}
+
+.blue-next {
+  height: 15.5px;
+  width: 15.5px;
+  margin-left: 10px;
+}
+
+.not-available {
+  color: red;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.available {
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.schedules-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 15px;
+  font-size: 13px;
+}
+
+.schedules-availability {
+  display: flex;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.review-row {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: top;
+}
+
+.review-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  color: #8c8b8b;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+
+.user-rating {
+  width: 12px;
+  height: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+}
+
+td,
+th {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  font-size: 8px;
+  color: #8c8b8b;
+}
+
+.tabletop {
+  border-top: 0;
+}
+
+.score {
+  font-size: 14px;
+  margin-left: 7.5px;
+  margin-right: 3px;
+}
+
+.total-score {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.review-rating {
+  display: flex;
+  justify-content: left;
+}
+
+.slash {
+  font-size: 8px;
+}
+
+.review-text-info {
+  font-size: 8px;
+}
+
+td.seats-num{
+  font-weight: bolder;
+}
+
+.seats-date{
+  padding-left: 10px;
+}
