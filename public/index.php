@@ -16,6 +16,14 @@
 	        break;
 	    case 'movie' :
 	        require __DIR__ . '/../app/views/movie-desc.html';
+	    case 'booking' :
+	        require __DIR__ . '/../app/views/booking.html';
+	        break;
+	    case 'login' :
+	        require __DIR__ . '/../app/views/login.html';
+	        break;
+	    case 'register' :
+	        require __DIR__ . '/../app/views/register.html';
 	        break;
 	    case 'test' :
 	        require __DIR__ . '/../app/views/index.html';

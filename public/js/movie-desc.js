@@ -1,4 +1,5 @@
 function restructurePage(film) {
+    console.log(film);
     let movieTitle = document.getElementsByClassName("movie-title")[0];
     movieTitle.innerHTML = film.title;
 
@@ -83,7 +84,6 @@ function getFilm() {
     xmlhttp.open("GET", "/api/film/getFilm?id_film=" + filmId, true);
     xmlhttp.send();
 }
-
 
 function getSchedule() {
     let filmId = getParameterByName("id_film");
