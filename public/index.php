@@ -1,24 +1,59 @@
 <?php
+	require_once "../app/init.php";
 	$request = $_SERVER['REQUEST_URI'];
-	switch ($request) {
-	    case '/' :
-	        require __DIR__ . '/../app/views/index.html';
-	        break;
+	$request = trim($request, '/');
+	$get = explode('?', $request);
+	$url = explode('/', $get[0]);
+	switch ($url[0]) {
 	    case '' :
-	        require __DIR__ . '/../app/views/index.html';
+	        require __DIR__ . '/../app/views/homepage.html';
 	        break;
-	    case '/connect' :
-	        require __DIR__ . '/../app/controller/connectTest.php';
-	        break;
-	    case '/load' :
+	    case 'load' :
 	        require __DIR__ . '/../app/controller/load.php';
 	        break;
-	    case '/head' :
+	    case 'head' :
 	        require __DIR__ . '/../app/views/header.html';
+<<<<<<< HEAD
 			break;
 		case '/movie' :
 			require __DIR__ . '/../app/views/movie-desc.html';
 			break;
+=======
+	        break;
+	    case 'history' :
+	        require __DIR__ . '/../app/views/history.html';
+	        break;
+	    case 'test' :
+	        require __DIR__ . '/../app/views/index.html';
+	        break;
+	    case 'api':
+	    	switch ($url[1]) {
+	    		case 'user':
+	    		case 'film':
+	    		case 'schedule':
+	    		case 'transaction':
+	    		case 'seat':
+	    			$controller = $url[1].'controller';
+	    			require_once '../app/controller/'.$controller.'.php';
+	    			$controller = new $controller();
+	    			$method = 'fail';
+	    			if( isset($url[2]) ) {
+			            if( method_exists($controller, $url[2]) ) {
+			                $method = $url[2];
+			            }
+			        }
+	    			call_user_func_array([$controller, $method], []);
+	    			break;
+	    		default:
+	    			$response = [
+	    				"status" => "404",
+	    				"message" => "Error API not found"
+	    			];
+	    			echo json_encode($response);
+	    			break;
+	    	}
+	    	break;
+>>>>>>> a3ef07c076a2d0add6eaa27802dccbd31f1ed6a8
 	    default:
 	        require __DIR__ . '/../app/views/fail.html';
 	        break;
