@@ -121,6 +121,10 @@ button {
   justify-content: space-between;
 }
 
+.seat-details {
+  display: none;
+}
+
 .modal {
   display: none;
   position: fixed;

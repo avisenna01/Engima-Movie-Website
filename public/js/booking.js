@@ -1,39 +1,21 @@
-const buttons = document.getElementsByTagName("button");
-
-let seatDetails = document.createElement("div");
-let buyTicketSection = document.createElement("div");
-let seatNumberAndPrice = document.createElement("div");
-let summary = document.getElementsByClassName("summary");
 let modal = document.getElementsByClassName("modal");
+let buyTicketButton = document.getElementsByClassName("ticket-button");
+let seatDetails = document.getElementsByClassName("seat-details");
+let summary = document.getElementsByClassName("summary");
+let seatSection = document.getElementsByClassName("seat-section");
 
-let movieTitle = createNewElement("h3", "Avengers: Endgame");
-let movieDate = createNewElement("p", "Septemver 4, 2019 - 09:40");
-let seatNumber = createNewElement("h3", "Seat #X");
-let price = createNewElement("h3", "Rp 75.000,-");
-let buyTicketButton = createNewElement("button", "Buy Ticket");
+console.log(seatSection);
 
-appendArrayOfChild(seatNumberAndPrice, [seatNumber, price]);
-seatNumberAndPrice.setAttribute("class", "number-price");
+buyTicketButton[0].addEventListener("click", successMessage);
 
-buyTicketButton.setAttribute("class", "blue-button");
-buyTicketSection.setAttribute("class", "buy-ticket-section");
-appendArrayOfChild(buyTicketSection, [buyTicketButton]);
-
-appendArrayOfChild(seatDetails, [
-  movieTitle,
-  movieDate,
-  seatNumberAndPrice,
-  buyTicketSection
-]);
-
-buyTicketButton.addEventListener("click", successMessage);
-
-buttons.map(button => {
-  button.addEventListener("click", checkout(button.id));
-});
+for (i = 0; i < seatSection.length; i++) {
+  seatSection[0].addEventListener("click", checkout(i));
+}
 
 function checkout(i) {
-  summary[0].replaceChild(seatDetails, summary[0].lastElementChild);
+  console.log(summary.children);
+  summary[0].children[1].style.display = "none";
+  seatDetails[0].style.display = "block";
   let numberAndPrice = document.getElementsByClassName("number-price");
   numberAndPrice[0].firstElementChild.textContent = `Seat #${i}`;
 }
