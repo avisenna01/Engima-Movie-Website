@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Film Review</title>
+	<link rel="stylesheet" type="text/css" href="/css/movie-rating.css">
+	<script type="text/javascript" src="/js/include.js"></script>
+</head>
+
+<body>
+	<header include="/head"></header>
+	<div class="base-interface">
+		<div class="interface">
+			<div class="back-and-title">
+				<div class="back-button">
+					<a href="http://link.to/history"><img src="assets/pinpng.com-arrow-icon-png-525723.png" height=40px
+							width=40px></a>
+				</div>
+				<div class="movie-title">
+					<b>Movie Title (Placeholder Text)</b>
+				</div>
+			</div>
+			<div class="rating-field">
+				<div class="add-rating-text">
+					Add rating
+				</div>
+				<div class="rating-star">
+					<input type="radio" name="rating-star" id="ten-star" value=10><label for="ten-star"
+						title="10/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="nine-star" value=9><label for="nine-star"
+						title="9/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="eight-star" value=8><label for="eight-star"
+						title="8/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="seven-star" value=7><label for="seven-star"
+						title="7/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="six-star" value=6><label for="six-star"
+						title="6/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="five-star" value=5><label for="five-star"
+						title="5/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="four-star" value=4><label for="four-star"
+						title="4/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="three-star" value=3><label for="three-star"
+						title="3/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="two-star" value=2><label for="two-star"
+						title="2/10">&#9733;</label>
+					<input type="radio" name="rating-star" id="one-star" value=1><label for="one-star"
+						title="1/10">&#9733;</label>
+				</div>
+			</div>
+			<div class="review-field">
+				<div class="add-review-text">
+					Add review
+				</div>
+				<div class="review-box">
+					<textarea placeholder="Write your review here" required id="review-text"></textarea>
+				</div>
+			</div>
+			<div class="action-buttons">
+				<div class="cancel-button-div">
+					<button type="button" id="button-cancel">Cancel</button>
+					<!-- use js to link the button above to history page-->
+				</div>
+				<div class="submit-button-div">
+					<button type="submit" id="button-submit">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<script type="text/javascript">window.onload = function () { includeHTML(); };</script>
