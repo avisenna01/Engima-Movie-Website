@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/homepage.css" media="screen" />
+    <script type="text/javascript" src="/js/include.js"></script>
+  </head>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +31,8 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  window.onload = includeHTML();
-</script>
+<script type="text/javascript" src="/js/cookie.js"></script>
+<script type="text/javascript">window.onload = function () {
+  includeHTML();
+  getUserName();
+};</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/login-register.css" media="screen" />
+</head>
+
+<body>
+    <div class="base-login">
+        <div class="login-outer-container">
+            <div class="imgcontainer">
+                <p>Welcome to <b>Engi</b>ma!</p>
+            </div>
+            <div class="container">
+                <label for="uname">Email</label>
+                <input class="text-field" type="text" placeholder="john@doe.com" name="uname" id="uname" required/>
+                <label for="psw">Password</label>
+                <input class="text-field" type="password" placeholder="place here" name="psw" id="psw" required/>
+                <div id="invalid-login">Invalid Login!</div>
+                <button id="submit-button">Login</button>
+            </div>
+            <div class="have-account container"><span class="redirect-text">Don't have an account? <a href="/register" class="register-button">Register here</a></span></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="/js/login-register.js"></script>
+<script type="text/javascript">window.onload = function () {
+  redirectCookie();
+};</script>
