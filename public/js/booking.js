@@ -13,7 +13,7 @@ function restructureSeatButton(seats) {
 
     button.innerHTML = seat.chair_number;
     button.id = seat.chair_number;
-    if (!seat.taken) {
+    if (seat.taken == 1) {
       button.setAttribute("disabled", true);
     }
 
@@ -68,27 +68,25 @@ function redirect() {
 
 function takeSeat() {
   var xmlhttp = new XMLHttpRequest();
+  let scheduleId = getParameterByName("id_schedule");
+  let chairnumber = parseInt(document.getElementById("seatnumber").innerHTML.slice(6), 10);
+  console.log(scheduleId);
+  console.log(chairnumber);
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      var myObj = JSON.parse(this.responseText);
-      if (myObj.status == "404") {
-        document.getElementById("invalid-login").style.display = "block";
-      }
-      else {
-        [myObj] = myObj;
-        setCookie("username", myObj.username, 1 / (24 * 30));
-        setCookie("accesstoken", myObj.accesstoken, 1 / (24 * 30));
-        location.replace("http://localhost:8080");
-      }
+      console.log(this.responseText);
     }
   };
-  xmlhttp.open("POST", "/api/user/login", true);
+  xmlhttp.open("POST", "/api/seat/takeSeat", true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xmlhttp.send("uname=" + uname.value + "&psw=" + pass.value);
+  xmlhttp.send("id_schedule=" + scheduleId + "&chair_number=" + chairnumber);
 }
 
 console.log(buyTicketButton);
 
 getAllSeats();
 transButton.addEventListener("click", redirect);
-buyTicketButton[0].addEventListener("click", successMessage);
+buyTicketButton[0].addEventListener("click", function () {
+  takeSeat();
+  successMessage();
+});

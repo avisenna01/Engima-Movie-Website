@@ -11,9 +11,14 @@
 
 <body>
   <div>
+    <div class="heading-plus-back-button">
+      <div class="back-button">
+        <a href="http://localhost:8080/transaction"><img src="/assets/public_assets_pinpng.com-arrow-icon-png-525723.png" id="back-icon"></a>
+      </div>
     <div class="heading">
       <h1>Avangers: Endgame</h1>
       <h3>Septemver 4, 2019 - 09:40</h3>
+    </div>
     </div>
     <div class="modal">
       <div class="modal-content">
@@ -39,7 +44,7 @@
           <h3>Avengers: Endgame</h3>
           <p>Semptember 4, 2019 - 09:40</p>
           <div class="number-price">
-            <h3>Seat #X</h3>
+            <h3 id="seatnumber">Seat #X</h3>
             <h3>Rp 75.000,-</h3>
           </div>
           <button class="blue-button ticket-button" action="/api/user/takeSeat" method="POST">Buy Ticket</button>
