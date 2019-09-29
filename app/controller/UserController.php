@@ -9,43 +9,46 @@ class UserController extends Controller{
 
 	public function login()
 	{
-		$query = "SELECT * FROM user WHERE email=:email and password=:password";
+		$query = "SELECT * FROM user WHERE email=:email and password=:pwd";
 		$this->db->query($query);
-		$this->db->bind('email', $_POST['uname']);
-		$this->db->bind('password', $_POST['psw']);
+		$this->db->bind('email', $_POST['email']);
+		$this->db->bind('pwd', $_POST['pwd']);
 		echo json_encode($this->db->result());
 	}
 
 	public function register()
 	{
-		$query = "insert into ....";
+		$query = "INSERT INTO user (username, email, phone_number, password, picture) VALUES (uname, email, phone, psw, profpic)";
 		$this->db->query($query);
-		$this->db->bind('email', $_POST['uname']);
-		$this->db->bind('password', $_POST['psw']);
+		$this->db->bind('uname', $_POST['uname']);
+		$this->db->bind('email', $_POST['email']);
+		$this->db->bind('phone', $_POST['phone']);
+		$this->db->bind('psw', $_POST['psw']);
+		$this->db->bind('profpic', $_POST['profpic']);
 	}
 
 	public function checkuname()
 	{
-		$query = "SELECT * FROM user WHERE username=:username";
+		$query = "SELECT * FROM user WHERE username=:uname";
 		$this->db->query($query);
-		$this->db->bind('username', $_GET['uname']);
+		$this->db->bind('uname', $_GET['uname']);
 		echo json_encode($this->db->result());
 	}
 
 //email
-	public function checkuname()
+	public function checkemail()
 	{
-		$query = "SELECT * FROM user WHERE username=:username";
+		$query = "SELECT * FROM user WHERE email=:email";
 		$this->db->query($query);
-		$this->db->bind('username', $_POST['uname']);
+		$this->db->bind('email', $_POST['email']);
 		echo json_encode($this->db->result());
 	}
 //phone
-	public function checkuname()
+	public function checkphone()
 	{
-		$query = "SELECT * FROM user WHERE username=:username";
+		$query = "SELECT * FROM user WHERE phone_number=:phone";
 		$this->db->query($query);
-		$this->db->bind('username', $_POST['uname']);
+		$this->db->bind('phone', $_POST['phone']);
 		echo json_encode($this->db->result());
 	}
 }
