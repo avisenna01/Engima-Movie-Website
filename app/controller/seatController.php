@@ -1,8 +1,9 @@
 <?php
 class SeatController extends Controller{
 	public function getAllSeats(){
-		$query = "SELECT * FROM seat";
+		$query = "SELECT * FROM seat WHERE id_schedule=:id_schedule";
 		$this->db->query($query);
+		$this->db->bind('id_schedule', $_GET['id_schedule']);
 		echo json_encode($this->db->result());
 	}
 
