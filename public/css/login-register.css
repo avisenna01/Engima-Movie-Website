@@ -240,3 +240,12 @@ a {
 .have-account {
   text-align: center;
 }
+
+#password-miss {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  display: none;
+}

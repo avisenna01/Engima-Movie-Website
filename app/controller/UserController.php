@@ -18,13 +18,15 @@ class UserController extends Controller{
 
 	public function register()
 	{
-		$query = "INSERT INTO user (username, email, phone_number, password, picture) VALUES (uname, email, phone, psw, profpic)";
+		$query = "INSERT INTO user (username, email, phone_number, password, picture) VALUES (:uname, :email, :phone, :psw, :profpic)";
 		$this->db->query($query);
 		$this->db->bind('uname', $_POST['uname']);
 		$this->db->bind('email', $_POST['email']);
 		$this->db->bind('phone', $_POST['phone']);
 		$this->db->bind('psw', $_POST['psw']);
 		$this->db->bind('profpic', $_POST['profpic']);
+		$this->db->execute();
+    	header("Location: http://localhost:8080");
 	}
 
 	public function checkuname()
@@ -35,20 +37,19 @@ class UserController extends Controller{
 		echo json_encode($this->db->result());
 	}
 
-//email
 	public function checkemail()
 	{
 		$query = "SELECT * FROM user WHERE email=:email";
 		$this->db->query($query);
-		$this->db->bind('email', $_POST['email']);
+		$this->db->bind('email', $_GET['email']);
 		echo json_encode($this->db->result());
 	}
-//phone
+
 	public function checkphone()
 	{
 		$query = "SELECT * FROM user WHERE phone_number=:phone";
 		$this->db->query($query);
-		$this->db->bind('phone', $_POST['phone']);
+		$this->db->bind('phone', $_GET['phone']);
 		echo json_encode($this->db->result());
 	}
 }

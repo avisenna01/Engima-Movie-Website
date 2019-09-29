@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+}
+
 .menu-container {
   color: black;
   background-color: white; /* Blue */
