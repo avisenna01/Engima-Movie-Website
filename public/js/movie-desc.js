@@ -18,6 +18,10 @@ function restructurePage(film) {
     briefExplanation.innerHTML = film.description;
 }
 
+function restructureSchedule(schedule){
+    let 
+}
+
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -42,6 +46,23 @@ function getFilm() {
         }
     };
     xmlhttp.open("GET", "/api/film/getFilm?id_film=" + filmId, true);
+    xmlhttp.send();
+}
+
+
+function getSchedule() {
+    let filmId = getParameterByName("id_film");
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let myObj = JSON.parse(this.responseText);
+            [myObj] = myObj;
+            if (myObj != null) {
+                restructurePage(myObj);
+            }
+        }
+    };
+    xmlhttp.open("GET", "/api/schedule/getSchedule?id_film=" + filmId, true);
     xmlhttp.send();
 }
 
