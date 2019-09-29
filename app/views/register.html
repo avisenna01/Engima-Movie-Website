@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/login-register.css" media="screen" />
+</head>
+
+<body>
+    <div class="base-login">
+        <div class="register-outer-container">
+            <form class="container" method="post" action="/api/user/register">
+                <div class="imgcontainer">
+                    <p>Welcome to <b>Engi</b>ma!</p>
+                </div>
+                <div class="container">
+                    <label for="uname" class="text-label">Username</label>
+                    <input class="text-field" type="text" placeholder="joe.johndoe" name="uname" id="uname-input" required/>
+                    <div id="error-text-username">
+                        <p id="error-username">Username</p>
+                        <p id="username-existed">wrong</p>
+                        <p id="error-username">is exist! Please use another username.</p>
+                    </div>
+                    <label for="email" class="text-label">Email Address</label>
+                    <input class="text-field" type="text" placeholder="joe@email.com" name="email" id="email-input" required/>
+                    <div id="error-text-email">
+                        <p id="error-email">Email</p>
+                        <p id="email-existed">wrong</p>
+                        <p id="error-email">is exist! Please use another email.</p>
+                    </div>
+                    <label for="phone" class="text-label">Phone Number</label>
+                    <input class="text-field" type="text" placeholder="+62813xxxxxxxx" name="phone" id="phone-input" required/>
+                    <div id="error-text-phone">
+                        <p id="error-phone">Phone number</p>
+                        <p id="phone-existed">wrong</p>
+                        <p id="error-phone">is exist! Please use another number.</p>
+                    </div>
+                    <label for="psw" class="text-label">Password</label>
+                    <input class="text-field" type="password" placeholder="make as strong as possible" name="psw" id="psw" required/>
+                    <label for="pswcon" class="text-label">Confirm Password</label>
+                    <input class="text-field" type="password" placeholder="same as above" id="pswcon" required/>
+                    <div id="password-miss">Password Mismatch!</div>
+                    <label for="profpic" class="text-label">Profile Picture</label>
+                    <div class="profile-pic">
+                        <input class="text-field input-file" type="file" name="profpic"/>
+                        <button class="browse-button" type="button">Browse</button>
+                    </div>
+                    <button class="submit-button" type="submit">Register</button>
+                </div>
+                <div class="container">
+                    <center><span class="redirect-text">Already have account? <a href="/login" class="login-button">Login here</a></span></center>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="/js/check.js"></script>
+<script type="text/javascript" src="/js/login-register.js"></script>
+<script type="text/javascript">window.onload = function () {
+  redirectCookie();
+};</script>

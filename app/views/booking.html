@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/css/booking.css" />
+  <title>Engima</title>
+</head>
+
+<body>
+  <div>
+    <div class="heading-plus-back-button">
+      <div class="back-button">
+        <a href="http://localhost:8080/transaction"><img src="/assets/public_assets_pinpng.com-arrow-icon-png-525723.png" id="back-icon"></a>
+      </div>
+    <div class="heading">
+      <h1>Avangers: Endgame</h1>
+      <h3>Septemver 4, 2019 - 09:40</h3>
+    </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <h1>Payment Success!</h1>
+        <p>Thank you for purchasing! You can view your purchase now.</p>
+        <button class="blue-button" id="trans-button">Go to transaction history</button>
+      </div>
+    </div>
+    <div class="ticket-section">
+      <div class="studio">
+        <ol class="seat-section"></ol>
+        <div class="screen">Screen</div>
+      </div>
+      <div class="summary">
+        <h2>Booking Summary</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          optio cumque reiciendis suscipit, amet quisquam sit voluptatibus.
+          Excepturi consequuntur vero porro. Ipsa quidem iure accusantium.
+          Aperiam voluptatum numquam esse eveniet.
+        </p>
+        <div class="seat-details">
+          <h3>Avengers: Endgame</h3>
+          <p>Semptember 4, 2019 - 09:40</p>
+          <div class="number-price">
+            <h3 id="seatnumber">Seat #X</h3>
+            <h3>Rp 75.000,-</h3>
+          </div>
+          <button class="blue-button ticket-button" action="/api/user/takeSeat" method="POST">Buy Ticket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/booking.js"></script>
+</body>
+
+</html>

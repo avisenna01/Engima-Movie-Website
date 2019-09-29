@@ -1,0 +1,82 @@
+.base-homepage {
+  font-family: Raleway-Bold;
+  background-color: #2b2821;
+  padding-left: 120px;
+  padding-right: 120px;
+  height: 922px;
+}
+
+.homepage {
+  background-color: white;
+  height: 922px;
+}
+
+b.name-color {
+  color: #3fddfc;
+  font-family: Raleway-ExtraBold;
+}
+
+.heading {
+  display: flex;
+  justify-content: left;
+  padding-top: 50px;
+  margin-left: 100px;
+}
+
+.now-play {
+  font-size: 21px;
+  padding-top: 30px;
+  margin-left: 100px;
+}
+
+.film-poster-container {
+  width: 50px;
+}
+
+.film-poster {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.films-container {
+  margin-top: -10px;
+  margin-left: 55px;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.film {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 58px 43px 58px 43px;
+}
+
+.description-film {
+  padding-top: 10px;
+}
+
+.rating-home {
+  height: 16px;
+  width: 16px;
+}
+
+.rating-home-description {
+  display: flex;
+}
+
+div.rating-home-description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+a.film-title {
+  font-family: Raleway;
+  width: 200px;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none; 
+  color: black;
+}
