@@ -9,11 +9,31 @@ class UserController extends Controller{
 
 	public function login()
 	{
-		$query = "SELECT * FROM user WHERE email=:email and password=:pwd";
+		$query = "SELECT * FROM user WHERE email=:email and password=:psw";
 		$this->db->query($query);
-		$this->db->bind('email', $_POST['email']);
-		$this->db->bind('pwd', $_POST['pwd']);
-		echo json_encode($this->db->result());
+		$this->db->bind('email', $_POST['uname']);
+		$this->db->bind('psw', $_POST['psw']);
+		$user = $this->db->result();
+		if ($user!=null){
+			[$user] = $user;
+			$query = "UPDATE user SET accesstoken = :accesstoken WHERE id_user = :id";
+			$this->db->query($query);
+			$this->db->bind('accesstoken', substr(str_shuffle(MD5(microtime())), 0, 10));
+			$this->db->bind('id', $user["id_user"]);
+			$this->db->execute();
+			$query = "SELECT * FROM user WHERE id_user=:id";
+			$this->db->query($query);
+			$this->db->bind('id', $user["id_user"]);
+			$user = json_encode($this->db->result());
+			echo $user;
+		}
+		else{
+			$response = [
+				"status" => "404",
+				"message" => "Error User not found"
+			];
+			echo json_encode($response);
+		}
 	}
 
 	public function register()
