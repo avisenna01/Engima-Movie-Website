@@ -7,8 +7,6 @@ function restructurePage(film) {
     genreTime[0].innerHTML = film.genre;
     genreTime[1].innerHTML = film.duration + " mins";
 
-    console.log(genreTime);
-
     let releasedDate = document.getElementsByClassName("released-date");
     releasedDate[0].innerHTML = "Released date: " + film.release;
 
@@ -19,7 +17,7 @@ function restructurePage(film) {
     briefExplanation.innerHTML = film.synopsis;
 
     let movieImage = document.getElementsByClassName("movie-image")[0];
-    movieImage.setAttribute("src", film.picture);
+    movieImage.setAttribute("src", film.picture + ".jpg");
 }
 
 function restructureSchedule(schedules) {
