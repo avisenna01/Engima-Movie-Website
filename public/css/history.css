@@ -1,0 +1,100 @@
+.base-history {
+  background-color: #2b2821;
+}
+
+.wrapper {
+  background-color: white;
+  margin-top: -50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 0px;
+  min-height: 100vh;
+}
+
+.history-title {
+  padding-top: 130px;
+  margin-left: 100px;
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: bolder;
+  margin-right: 100px;
+  font-family: Raleway-Bold;
+}
+
+.history-content {
+  margin-top: 35px;
+  margin-left: 110px;
+  margin-right: 100px;
+}
+
+.history-content hr {
+  margin-top: 20px;
+  bottom: 20px;
+  color: gray;
+}
+
+.history-image img {
+  height: 130px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.history-name {
+  margin-top: 25px;
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  font-family: Raleway;
+}
+
+.history-name h6 {
+  color: darkgray;
+}
+
+.history-name p {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  font-family: Raleway;
+}
+
+.history-name b {
+  color: cyan;
+}
+
+.history-name b.movie-title {
+  display: block;
+  font-family: Raleway-Bold;
+  color: black;
+  font-size: 1.1em;
+}
+
+.add-review {
+  background-color: rgb(0, 193, 236);
+}
+
+.update-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-review {
+  background-color: red;
+}
+
+.edit-review {
+  background-color: #41b304;
+  margin-left: 15px;
+}
+
+.reviews-buttons {
+  border-width: 0px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  font-family: Lato;
+}
