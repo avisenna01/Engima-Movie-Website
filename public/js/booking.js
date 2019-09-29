@@ -4,16 +4,16 @@ let seatDetails = document.getElementsByClassName("seat-details");
 let summary = document.getElementsByClassName("summary");
 let seatSection = document.getElementsByClassName("seat-section");
 
-console.log(seatSection);
+console.log(seatSection[0].children[0].children[0]);
 
 buyTicketButton[0].addEventListener("click", successMessage);
 
-for (i = 0; i < seatSection.length; i++) {
-  seatSection[0].addEventListener("click", checkout(i));
+for (i = 0; i < seatSection[0].length; i++) {
+  seatSection[0].children[i].children[0].addEventListener("click", checkout(i));
 }
 
 function checkout(i) {
-  console.log(summary.children);
+  console.log(summary[0].children);
   summary[0].children[1].style.display = "none";
   seatDetails[0].style.display = "block";
   let numberAndPrice = document.getElementsByClassName("number-price");
