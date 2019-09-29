@@ -13,4 +13,3 @@ if ($mysqli->multi_query($sql)) {
 } else {
    echo "error";
 }
-?>

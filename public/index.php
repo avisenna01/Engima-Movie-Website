@@ -14,8 +14,8 @@
 	    case 'head' :
 	        require __DIR__ . '/../app/views/header.html';
 	        break;
-	    case 'history' :
-	        require __DIR__ . '/../app/views/history.html';
+	    case 'booking' :
+	        require __DIR__ . '/../app/views/booking.html';
 	        break;
 	    case 'login' :
 	        require __DIR__ . '/../app/views/login.html';
@@ -33,7 +33,7 @@
 	    		case 'schedule':
 	    		case 'transaction':
 	    		case 'seat':
-	    			$controller = $url[1].'controller';
+	    			$controller = $url[1].'Controller';
 	    			require_once '../app/controller/'.$controller.'.php';
 	    			$controller = new $controller();
 	    			$method = 'fail';
