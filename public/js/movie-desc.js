@@ -21,8 +21,34 @@ function restructurePage(film) {
     movieImage.setAttribute("src", film.picture);
 }
 
-function restructureSchedule(schedule){
-    let 
+function restructureSchedule(schedules) {
+    let table = document.getElementsByTagName("table")[0];
+
+    schedules.map(schedule => {
+        let tr = document.createElement("tr");
+        let date = schedule.showtime;
+
+        let seatDate = document.createElement("td");
+        seatDate.classList.add("seats-date");
+        seatDate.innerHTML = date.getDate();
+
+        let time = document.createElement("tr");
+        time.innerHTML = date.getTime();
+
+        let seatNum = document.createElement("td");
+        seatNum.classList.add("seats-num")
+        seatNum.innerHTML = "30 seats";
+
+        let available = document.createElement("td");
+        available.classList.add("available");
+        available.innerHTML = "Book Now";
+
+        tr.appendChild(seatDate);
+        tr.appendChild(time);
+        tr.appendChild(seatNum);
+        tr.appendChild(available);
+        table.appendChild(tr);
+    })
 }
 
 function getParameterByName(name, url) {
@@ -59,9 +85,8 @@ function getSchedule() {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let myObj = JSON.parse(this.responseText);
-            [myObj] = myObj;
             if (myObj != null) {
-                restructurePage(myObj);
+                restructureSchedule(myObj);
             }
         }
     };
