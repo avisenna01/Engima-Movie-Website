@@ -5,6 +5,7 @@ function restructureFilms(films) {
         let img = document.createElement("img");
         img.classList.add("film-poster");
         img.setAttribute("src", film.picture+'.jpg');
+        img.setAttribute("href", "http://localhost:8080/movie?id=" + film.id_film);
 
         let filmPosterContainer = document.createElement("div");
         filmPosterContainer.classList.add("film-poster-container");
@@ -19,8 +20,10 @@ function restructureFilms(films) {
         let descFilm = document.createElement("div");
         descFilm.classList.add("description-film");
 
-        let filmTitle = document.createElement("h4");
+        let filmTitle = document.createElement("a");
         filmTitle.classList.add("film-title");
+        filmTitle.setAttribute("href", "http://localhost:8080/movie?id=" + film.id_film);
+
 
         let bold = document.createElement("b");
         bold.innerHTML = film.title;
@@ -56,10 +59,8 @@ function getAllFilms() {
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
             let myObj = JSON.parse(this.responseText);
             if (myObj != null) {
-                console.log(myObj);
                 restructureFilms(myObj);
             }
         }
@@ -67,7 +68,4 @@ function getAllFilms() {
     xmlhttp.open("GET", "/api/film/getAllFilms", true);
     xmlhttp.send();
 }
-
 getAllFilms();
-
-console.log("adnba");
