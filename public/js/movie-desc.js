@@ -11,8 +11,7 @@ function restructurePage(film) {
     let releasedDate = document.getElementsByClassName("released-date");
     releasedDate[0].innerHTML = "Released date: " + film.release;
 
-
-    let rating = document.getElementsByClassName("score1");
+    let rating = document.getElementsByClassName("score1")[0];
     rating.innerHTML = film.rating;
 
     let briefExplanation = document.getElementsByClassName("brief-explanation");
