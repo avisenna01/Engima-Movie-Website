@@ -1,44 +1,77 @@
-.name {
-  font-family: Arial, Helvetica, sans-serif;
+.base-homepage {
+  font-family: Raleway-Bold;
+  background-color: #2b2821;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 922px;
 }
 
-h1 b {
+.homepage {
+  background-color: white;
+  height: 922px;
+}
+
+b.name-color {
   color: #3fddfc;
-}
-
-.hello {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .heading {
   display: flex;
   justify-content: left;
-  margin-left: 75px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
 
 .now-play {
   font-size: 21px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 75px;
+  padding-top: 20px;
+  margin-left: 100px;
 }
 
-img {
-  border-radius: 10px 10px 0 0;
+.film-poster-container {
+  width: 50px;
+}
+
+.film-poster {
+  border-radius: 10px;
+  height: 200px;
 }
 
 .films-container {
+  padding-top: 20px;
+  margin-left: 55px;
+  margin-top: 20px;
   justify-content: flex-start;
   display: flex;
-  margin-left: 75px;
+  flex-wrap: wrap;
 }
 
 .film {
-  width: 170px;
-  height: 185px;
+  width: 100px;
+  height: 150px;
   border-radius: 10px;
+  margin: 58px 43px 58px 43px;
 }
 
-.description {
-  padding: 2px 16px;
+.description-film {
+  padding-top: 10px;
+}
+
+.rating-home {
+  height: 16px;
+  width: 16px;
+}
+
+.rating-home-description {
+  display: flex;
+}
+
+div.rating-home-description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+h4.film-title {
+  width: 200px;
 }
