@@ -47,7 +47,11 @@ Sebagai user pengguna dapat memesan tiket melalui web ini dan memilih posisi dud
 
 # Pembagian tugas
 
-Fata Nugraha:
-Avisenna Abimanyu:
-Rakhmad Budiono:
-Nathaniel Evan G:
+Fata Nugraha (13517109): <br>
+authentication, mvc, api, integrating frontend and backend, testing, UI tweaking <br>
+Avisenna Abimanyu (13517010): <br>
+movie description page, search result page, homepage and other frontend stuff, api,integrating frontend and backend, testing <br>
+Rakhmad Budiono (13517151): <br>
+fitur booking film, api, mvc, integrating frontend and backend, testing, UI tweaking <br>
+Nathaniel Evan G (135160550: <br>
+movie rating page and other frontend stuff, header page, api, integrating frontend and backend, testing <br>
