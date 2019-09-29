@@ -1,10 +1,10 @@
-Tugas Besar 1
+# Tugas Besar 1 IF3110 & IF3159
 
-Anggota kelompok:
-Avisenna Abimanyu / 13517010
-Fata Nugraha / 13517109
-Rakhmad Budiono / 13517151
-Nathaniel Evan G / 13516055
+Anggota kelompok: <br>
+Avisenna Abimanyu / 13517010<br>
+Fata Nugraha / 13517109<br>
+Rakhmad Budiono / 13517151<br>
+Nathaniel Evan G / 13516055<br>
 
 # Deskripsi:
 
