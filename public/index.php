@@ -27,7 +27,7 @@
 	    		case 'schedule':
 	    		case 'transaction':
 	    		case 'seat':
-	    			$controller = $url[1].'controller';
+	    			$controller = $url[1].'Controller';
 	    			require_once '../app/controller/'.$controller.'.php';
 	    			$controller = new $controller();
 	    			$method = 'fail';
