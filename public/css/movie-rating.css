@@ -13,6 +13,8 @@
 .interface {
 	background-color: white;
 	width: 80%;
+	font-family: Raleway-Bold;
+	
 }
 
 .back-and-title {
@@ -94,7 +96,8 @@
 }
 
 .cancel-button-div {
-	margin-right: 10px;	
+	margin-right: 10px;
+	border-color: #ada5a5;
 }
 
 #button-cancel {
@@ -104,7 +107,6 @@
 	appearance: button;
 	border-style: solid;
 	border-radius: 5px;
-	border-color: #606060;
 	border-width: 1px;
 	width: 90px;
 	height: 35px;

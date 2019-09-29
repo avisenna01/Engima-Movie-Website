@@ -45,11 +45,7 @@
 }
 
 .engima {
-<<<<<<< HEAD
-  font-family: Raleway;
-=======
   font-family: Lato;
->>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   margin-left: 305px;
 }
@@ -73,11 +69,7 @@ input.search {
 }
 
 input.search::placeholder {
-<<<<<<< HEAD
-  font-family: Raleway;
-=======
   font-family: Lato;
->>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-size: 10px;
   font-weight: bolder;
   color: gray;
@@ -97,11 +89,7 @@ input.search::placeholder {
 }
 
 a.transaction {
-<<<<<<< HEAD
-  font-family: Raleway;
-=======
   font-family: Lato;
->>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   font-size: 10px;
   text-decoration: none !important;
@@ -111,11 +99,7 @@ a.transaction {
 }
 
 .logout {
-<<<<<<< HEAD
-  font-family: Raleway;
-=======
   font-family: Lato;
->>>>>>> 965cce9fdfced24855ee3c3fa3e2a31faadbd1c4
   font-weight: bold;
   font-size: 10px;
   text-decoration: none !important;
