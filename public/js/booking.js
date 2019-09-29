@@ -28,14 +28,14 @@ appendArrayOfChild(seatDetails, [
 
 buyTicketButton.addEventListener("click", successMessage);
 
-for (i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", checkout(i));
-}
+buttons.map(button => {
+  button.addEventListener("click", checkout(button.id));
+});
 
 function checkout(i) {
   summary[0].replaceChild(seatDetails, summary[0].lastElementChild);
-  // let numberAndPrice = document.getElementsByClassName("number-price");
-  // numberAndPrice[0].firstElementChild.textContent = `Seat #${i}`;
+  let numberAndPrice = document.getElementsByClassName("number-price");
+  numberAndPrice[0].firstElementChild.textContent = `Seat #${i}`;
 }
 
 function createNewElement(element, text) {
