@@ -3,7 +3,8 @@ function restructureFilms(films) {
 
     films.map(film => {
         let img = document.createElement("img");
-        img.setAttribute("src", film.picture);
+        img.classList.add("film-poster");
+        img.setAttribute("src", film.picture+'.jpg');
 
         let filmPosterContainer = document.createElement("div");
         filmPosterContainer.classList.add("film-poster-container");

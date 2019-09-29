@@ -1,8 +1,8 @@
 .base-homepage {
   font-family: Raleway-Bold;
   background-color: #2b2821;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 120px;
+  padding-right: 120px;
   height: 922px;
 }
 
@@ -13,18 +13,19 @@
 
 b.name-color {
   color: #3fddfc;
+  font-family: Raleway-ExtraBold;
 }
 
 .heading {
   display: flex;
   justify-content: left;
-  padding-top: 20px;
+  padding-top: 50px;
   margin-left: 100px;
 }
 
 .now-play {
   font-size: 21px;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-left: 100px;
 }
 
@@ -38,9 +39,8 @@ b.name-color {
 }
 
 .films-container {
-  padding-top: 20px;
+  margin-top: -10px;
   margin-left: 55px;
-  margin-top: 20px;
   justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
