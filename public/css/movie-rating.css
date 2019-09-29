@@ -1,0 +1,165 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.base-interface {
+	display: flex;
+	background-color: #2b2821;
+	justify-content: center;
+	height: 922px;
+}
+
+.interface {
+	background-color: white;
+	width: 80%;
+	font-family: Raleway-Bold;
+	
+}
+
+.back-and-title {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 40px;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+.back-button {
+	width: 40px;
+	height: 40px;
+}
+
+.movie-title {
+	display: flex;
+	width: 420px;
+	align-items: center;
+	font-size: 24px;
+	margin-left: 50px;
+}
+
+.rating-field {
+	display: flex;
+	flex-direction: row;
+}
+
+.add-rating-text {
+	margin-left: 340px;
+	display: flex;
+	font-size: 18px;
+	width: 130px;
+	height: 50px;
+	align-items: center;
+}
+
+.rating-star {
+	margin-top: 5px;
+}
+
+.review-field {
+	display: flex;
+	flex-direction: row;
+}
+
+.add-review-text {
+	margin-left: 340px;
+	display: flex;
+	font-size: 18px;
+	width: 130px;
+	height: 50px;
+	align-items: center;
+}
+
+.review-box {
+	border-style: solid;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border-radius: 10px;
+	border-color: #606060;
+	padding: 6px;
+	margin-top: 12px;
+}
+
+#review-text {
+	border: none;
+	resize: none;
+	width: 400px;
+	height: 90px;
+	font-size: 16px;
+}
+
+.action-buttons {
+	display: flex;
+	flex-direction: row;
+	margin-top: 45px;
+	justify-content: flex-end;
+}
+
+.cancel-button-div {
+	margin-right: 10px;
+	border-color: #ada5a5;
+}
+
+#button-cancel {
+	display: inline-flex;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+	appearance: button;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	width: 90px;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	text-decoration: none;
+	color: #606060;
+}
+
+.submit-button-div {
+	margin-right: 200px;
+}
+
+#button-submit {
+	display: inline-flex;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+	appearance: button;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: rgb(0, 193, 236);
+	color: white;
+	background-color: rgb(0, 193, 236);
+	width: 90px;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.rating-star > input {
+	display: none;
+}
+
+.rating-star > label:before { 
+	display: inline-block;
+}
+
+.rating-star > label {
+	color: #ddd;
+	font-size: 1.8em;
+	float: right; /* reverses the order of the radio buttons */
+}
+
+.rating-star > input:checked ~ label {
+	color: #ffaa00;
+}
+
+.rating-star > input:hover ~ label {
+	color: #ffcc66;
+}
+
+
