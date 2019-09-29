@@ -16,6 +16,9 @@ function restructurePage(film) {
 
     let briefExplanation = document.getElementsByClassName("brief-explanation");
     briefExplanation.innerHTML = film.description;
+
+    let movieImage = document.getElementsByClassName("movie-image")[0];
+    movieImage.setAttribute("src", film.picture);
 }
 
 function restructureSchedule(schedule){
