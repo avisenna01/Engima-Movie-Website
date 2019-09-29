@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+.base-login {
+  font-family: "Raleway";
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+form.container {
+  -webkit-box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
+  -moz-box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
+  box-shadow: 0px 2px 8px 3px rgba(204, 204, 204, 0.58);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3dcdf5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  font-size: 18px;
+  font-family: Raleway-Bold;
+}
+
+.imgcontainer p b {
+  font-family: "Raleway-ExtraBold";
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.register-outer-container {
+  width: 380px;
+  margin-top: 50px;
+}
+
+.login-outer-container {
+  width: 380px;
+  margin-top: 200px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.register-button {
+  color: #3dcdf5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.redirect-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+.login-button {
+  color: #3dcdf5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.browse-button {
+  background-color: #bebdbf;
+  margin-left: 3.5px;
+  width: 250px;
+}
+
+.text-label {
+  font-weight: lighter;
+}
+
+.text-field {
+  margin-top: 8.5px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 170px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.input-file {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-button {
+  margin-bottom: -50px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic input {
+  margin-right: 3.5px;
+}
+
+#error-username {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#username-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-username {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#error-email {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#email-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-email {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#error-phone {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#phone-existed {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 10px;
+  font-family: Raleway-Bold;
+  display: inline;
+}
+
+#error-text-phone {
+  margin-bottom: 8px;
+  display: none;
+}
+
+#invalid-login {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  display: none;
+}
+
+.have-account {
+  text-align: center;
+}
+
+#password-miss {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f52525;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  display: none;
+}
