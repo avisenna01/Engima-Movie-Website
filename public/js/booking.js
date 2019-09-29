@@ -2,22 +2,31 @@ let modal = document.getElementsByClassName("modal");
 let buyTicketButton = document.getElementsByClassName("ticket-button");
 let seatDetails = document.getElementsByClassName("seat-details");
 let summary = document.getElementsByClassName("summary");
-let seatSection = document.getElementsByClassName("seat-section");
+let seatSection = document.querySelectorAll(".seat-section li button");
+let transButton = document.getElementById('trans-button');
 
-console.log(seatSection[0].children[0].children[0]);
+transButton.addEventListener("click", redirect);
+
+function redirect() {
+  location.replace("http://localhost:8080/transaction");
+}
+
+console.log(seatSection);
+
+
 
 buyTicketButton[0].addEventListener("click", successMessage);
 
-for (i = 0; i < seatSection[0].length; i++) {
-  seatSection[0].children[i].children[0].addEventListener("click", checkout(i));
+for (i = 0; i < seatSection.length; i++) {
+  seatSection[i].addEventListener("click", checkout);
 }
 
-function checkout(i) {
+function checkout() {
   console.log(summary[0].children);
   summary[0].children[1].style.display = "none";
   seatDetails[0].style.display = "block";
   let numberAndPrice = document.getElementsByClassName("number-price");
-  numberAndPrice[0].firstElementChild.textContent = `Seat #${i}`;
+  numberAndPrice[0].firstElementChild.textContent = "Seat #" + this.id;
 }
 
 function createNewElement(element, text) {
