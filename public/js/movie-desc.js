@@ -14,8 +14,8 @@ function restructurePage(film) {
     let rating = document.getElementsByClassName("score1")[0];
     rating.innerHTML = film.rating;
 
-    let briefExplanation = document.getElementsByClassName("brief-explanation");
-    briefExplanation.innerHTML = film.description;
+    let briefExplanation = document.getElementsByClassName("brief-explanation")[0];
+    briefExplanation.innerHTML = film.synopsis;
 
     let movieImage = document.getElementsByClassName("movie-image")[0];
     movieImage.setAttribute("src", film.picture);
